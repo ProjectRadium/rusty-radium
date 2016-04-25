@@ -1,0 +1,49 @@
+radium 0.0.1.0
+
+Copyright (c) 2016 Project Radium
+Distributed under the MIT/X11 software license, see the accompanying
+LICENSE file or http://www.opensource.org/licenses/mit-license.php for more details.
+
+Website: http://www.projectradium.org
+Forum: https://bitcointalk.org/index.php?topic=1333026.0
+
+Intro
+-----
+Radium is the base blockchain upon which all Project Radium decentralized services are built.
+The main service built on top of Radium is the SmartChain.
+
+SmartChain
+----------
+See https://github.com/JJ12880/SmartChain for more details on the SmartChain.
+
+rusty-radium
+------------
+rusty-radium is the implementation of the radium core protocol in the Rust programming language.
+rusty-radium will be continuously developed until the entire core protocol is implementated at a production level in versions 1.x.x.x.
+
+rusty-radium development
+------------------------
+Once rusty-radium has reached production level support at versions 1.x.x.x and higher, development will be shifted from maintaining the core protocol, to implementing a new core protocol.
+Periodic updates will be made in order to maintain the core protocol until the new core protocol is production ready.
+
+Contributions
+-------------
+If you would like to contribute to this project, feel free to fork the repository and create a new pull request for each update you make.
+Correct Rust conventions and versioning conventions are a requirement for a pull request to be considered.
+Please provide a change log in the description of your pull request.
+
+Release process
+---------------
+ - Update versioning.
+ - Update documentation where neccessary.
+ - Update translations where neccessary.
+ - Build the project on each platform.
+ |- Install Rust
+ |- cargo build --release
+ |- Tag the release version on Github
+ |- Cross-verify with other developers that the final release does not contain any malicious code
+ |- Submit all compiled clients for uploading as a final release on Github
+ |- Record the final release hashes onto the SmartChain
+ - Update website download links.
+ - Update forum download links.
+ - Contact known node operators to notify of an update.

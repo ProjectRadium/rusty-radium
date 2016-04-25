@@ -1,0 +1,12 @@
+To build on *nix systems (Linux, OS X), follow these directions:
+
+Install the required dependencies:
+ - Git
+ - Rust ($ curl -sSf https://static.rust-lang.org/rustup.sh | sh)
+
+Run the following commands:
+ - git clone https://github.com/tm2013/rusty-radium.git
+ - cd path/to/rusty-radium
+ - cargo build --release
+ 
+That's it! Quick and painless.
